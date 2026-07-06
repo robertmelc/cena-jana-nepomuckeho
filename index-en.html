@@ -209,6 +209,22 @@
     .about-side{border-left:none; border-top:1px solid var(--line); padding-left:0; padding-top:30px;}
   }
 
+  /* ---------- COLLEGIUM ---------- */
+  .mission-list{list-style:none; margin-top:14px;}
+  .mission-list li{position:relative; padding-left:22px; margin-bottom:11px; font-size:15.5px; color:var(--anthracite-soft); line-height:1.55;}
+  .mission-list li::before{content:"—"; position:absolute; left:0; color:var(--gold); font-weight:600;}
+  .closing-quote{
+    font-family:var(--serif); font-style:italic; font-size:20px; color:var(--navy);
+    border-left:2px solid var(--gold); padding-left:22px; margin-top:44px; max-width:640px;
+  }
+  .kolegium-doc{
+    margin-top:34px; display:inline-flex; align-items:center; gap:10px; padding:14px 22px;
+    border:1px solid var(--line); border-radius:2px; font-size:13px; letter-spacing:1.2px;
+    text-transform:uppercase; font-weight:600; color:var(--navy); transition:border-color .3s ease;
+  }
+  .kolegium-doc:hover{border-color:var(--gold);}
+  .kolegium-doc svg{width:18px; height:18px; stroke:var(--gold); fill:none; stroke-width:1.3;}
+
   /* ---------- KATEGORIE ---------- */
   .cat-list{display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--line); border:1px solid var(--line); margin-top:10px;}
   .cat-item{background:var(--ivory); padding:32px 30px; position:relative;}
@@ -219,6 +235,11 @@
   .cat-item.grand h3{color:var(--gold-soft);}
   .cat-item.grand p{color:rgba(245,239,225,0.7);}
   @media (max-width:700px){.cat-list{grid-template-columns:1fr;}}
+
+  .trophy-concept{margin-top:56px;}
+  .trophy-art{border:1px solid var(--line); padding:16px; border-radius:2px; max-width:720px; margin:0 auto; background:var(--ivory);}
+  .trophy-art svg{width:100%; height:auto; display:block;}
+  .trophy-caption{max-width:720px; margin:14px auto 0; font-size:13.5px; color:var(--anthracite-soft); font-style:italic; text-align:center;}
 
   /* ---------- LAUREATI ---------- */
   .laureate-panel{
@@ -354,6 +375,7 @@
       <a href="#nominace">Nominations</a>
       <a href="#predavani">Ceremony</a>
       <a href="#svatec">Saint John of Nepomuk</a>
+      <a href="#kolegium">Patrons' Collegium</a>
       <a href="#partnere">Partners</a>
       <a href="#institut">Institute</a>
       <a href="#dokumenty">Documents</a>
@@ -499,6 +521,59 @@
         <div class="cat-item"><span class="num">07</span><h3>Lifetime Achievement Award</h3><p>Recognition for a lifetime spent living out the Award's values.</p></div>
         <div class="cat-item grand"><span class="num">08 — presented irregularly</span><h3>Grand Prize of Saint John of Nepomuk</h3><p>The platform's highest honour, presented on rare occasions for an exceptional lifetime legacy.</p></div>
       </div>
+
+      <div class="trophy-concept reveal">
+        <div class="section-head" style="margin-bottom:24px;">
+          <span class="eyebrow">Visual Concept</span>
+          <h3 style="font-family:var(--serif); font-weight:500; font-size:26px; margin-top:10px; color:var(--anthracite);">What the Award Will Look Like</h3>
+          <p class="lede" style="font-size:16px;">An early graphic concept of both trophies. On the left, the Main Award; on the right, the category-specific "A Story Touched by Faith" award.</p>
+        </div>
+        <div class="trophy-art">
+          <svg width="100%" viewBox="0 0 680 600" role="img">
+            <title>Concept design of two trophies — the Main Award and the "A Story Touched by Faith" Award</title>
+            <desc>An illustrative concept of two awards: on the left, a tall glass trophy with a golden halo of five stars above a medallion; on the right, a smaller glass trophy shaped like a flame with a single star above its tip.</desc>
+            <rect x="0" y="0" width="680" height="600" fill="#F5EFE1"/>
+            <line x1="340" y1="120" x2="340" y2="560" stroke="#0E1B33" stroke-opacity="0.15" stroke-width="0.75" stroke-dasharray="4,4"/>
+            <line x1="60" y1="548" x2="620" y2="548" stroke="#B4923E" stroke-width="1" stroke-opacity="0.5"/>
+
+            <ellipse cx="180" cy="549" rx="78" ry="8" fill="#0E1B33" fill-opacity="0.12"/>
+            <rect x="110" y="506" width="140" height="40" rx="3" fill="#0E1B33"/>
+            <rect x="110" y="506" width="140" height="4" fill="#B4923E"/>
+            <text x="180" y="519" text-anchor="middle" font-size="9" letter-spacing="1" fill="#D8C48A">SAINT JOHN OF</text>
+            <text x="180" y="531" text-anchor="middle" font-size="9" letter-spacing="1" fill="#D8C48A">NEPOMUK AWARD</text>
+
+            <path d="M135,506 L225,506 L205,240 L155,240 Z" fill="#EAF3FB" fill-opacity="0.55" stroke="#B4923E" stroke-width="1"/>
+
+            <circle cx="180" cy="195" r="46" fill="none" stroke="#B4923E" stroke-width="2"/>
+            <circle cx="180" cy="195" r="13" fill="#0E1B33" stroke="#B4923E" stroke-width="1"/>
+            <circle cx="180" cy="149" r="4" fill="#B4923E"/>
+            <circle cx="223.7" cy="180.8" r="4" fill="#B4923E"/>
+            <circle cx="207" cy="232.2" r="4" fill="#B4923E"/>
+            <circle cx="153" cy="232.2" r="4" fill="#B4923E"/>
+            <circle cx="136.3" cy="180.8" r="4" fill="#B4923E"/>
+
+            <line x1="180" y1="149" x2="180" y2="110" stroke="#B4923E" stroke-width="2"/>
+            <path d="M180,100 L185,108 L180,116 L175,108 Z" fill="#B4923E"/>
+
+            <text x="180" y="568" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="13" fill="#2B2C30">Saint John of Nepomuk Award</text>
+            <text x="180" y="585" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="11" fill="#54565C">Main award</text>
+
+            <ellipse cx="500" cy="549" rx="68" ry="7" fill="#0E1B33" fill-opacity="0.12"/>
+            <rect x="430" y="508" width="140" height="36" rx="3" fill="#0E1B33"/>
+            <rect x="430" y="508" width="140" height="4" fill="#B4923E"/>
+            <text x="500" y="521" text-anchor="middle" font-size="9" letter-spacing="1" fill="#D8C48A">A STORY TOUCHED</text>
+            <text x="500" y="533" text-anchor="middle" font-size="9" letter-spacing="1" fill="#D8C48A">BY FAITH</text>
+
+            <path d="M500,508 C459,508 452,452 468,410 C478,384 490,350 500,300 C510,350 522,384 532,410 C548,452 541,508 500,508 Z" fill="#FDEFD9" fill-opacity="0.6" stroke="#B4923E" stroke-width="1"/>
+
+            <polygon points="500,268 503.5,277.1 513.3,277.7 505.7,283.9 508.2,293.3 500,288 491.8,293.3 494.3,283.9 486.7,277.7 496.5,277.1" fill="#B4923E"/>
+
+            <text x="500" y="568" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="13" fill="#2B2C30">A Story Touched by Faith</text>
+            <text x="500" y="585" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="11" fill="#54565C">Category award</text>
+          </svg>
+        </div>
+        <p class="trophy-caption">Graphic concept. The final design of both awards will be created in collaboration with a glass workshop.</p>
+      </div>
     </div>
   </section>
 
@@ -604,6 +679,51 @@
     </div>
   </section>
 
+  <!-- ================= COLLEGIUM ================= -->
+  <section id="kolegium" class="tight">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Patrons' Collegium</span>
+        <h2>Collegium of Patrons of Trust and Justice of Saint John of Nepomuk</h2>
+        <p class="lede" style="font-family:var(--serif); font-style:italic; font-size:20px; color:var(--navy);">"Where trust is protected, justice can truly serve mankind."</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="reveal">
+          <p>Trust is one of the most precious values on which human society rests. Without trust, there can be no justice, no freedom, and no genuine partnership between people.</p>
+          <p>The Collegium of Patrons of Trust and Justice of Saint John of Nepomuk is founded as a community of individuals who wish to lend their name, experience and authority to upholding the values of trust, justice, responsibility, integrity and service to others.</p>
+          <p>Saint John of Nepomuk became a symbol of fidelity to conscience, of the protection of human dignity, of discretion, and of the courage to preserve the truth even at the cost of the highest sacrifice. His legacy transcends the boundaries of time, nations and professions. He is venerated as the patron of the seal of confession throughout the Catholic Church — which is why the value of confidentiality, conscience and discretion resonates with the legal professions regardless of personal belief.</p>
+          <p>The Collegium brings together representatives of the legal professions, public life, academia, business, the churches, culture and civil society. What unites them is not a shared opinion, but shared values.</p>
+
+          <p class="closing-quote">"Trust is a commitment. Justice is a service. The legacy of Saint John of Nepomuk is an inspiration."</p>
+
+          <a class="kolegium-doc" href="manifesto-collegium-of-patrons-of-trust-and-justice.pdf" download>
+            <svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"/><path d="M15 2v5h5"/><path d="M9 13h6M9 17h6"/></svg>
+            Download the Collegium Manifesto →
+          </a>
+        </div>
+
+        <div class="about-side reveal">
+          <dl class="facts">
+            <dt>The mission of the Collegium is to</dt>
+            <dd>
+              <ul class="mission-list">
+                <li>protect and advance the values of trust, justice and human dignity</li>
+                <li>support dialogue, mutual respect and social responsibility</li>
+                <li>serve as a moral foundation for projects that carry the legacy of Saint John of Nepomuk</li>
+                <li>inspire future generations toward honesty, service and civic courage</li>
+                <li>contribute to building a society founded on trust and mutual respect</li>
+              </ul>
+            </dd>
+          </dl>
+          <div class="patron-note">
+            Membership in the Collegium is neither an honour nor a social title. It is an expression of personal conviction that trust is the foundation of every just society, and that each of us bears responsibility for its protection.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ================= PARTNERE ================= -->
   <section id="partnere" class="tight">
     <div class="wrap">
@@ -702,6 +822,7 @@
         <li><a href="#kategorie">Award Categories</a></li>
         <li><a href="#nominace">Nominations</a></li>
         <li><a href="#predavani">Award Ceremony</a></li>
+        <li><a href="#kolegium">Patrons' Collegium</a></li>
         <li><a href="#dokumenty">Downloadable Documents</a></li>
       </ul>
     </div>
